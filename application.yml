@@ -18,10 +18,8 @@ spring:
   profiles: microserviceconsumer
   application:
     name: microservice-consumer
-
 server: 
   port: 7003
-
 eureka:
   client:
     register-with-eureka: false
