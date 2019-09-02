@@ -1,16 +1,17 @@
 ﻿spring:
   profiles:
     active:
-      - dev
+      - devabc
 ---
 spring:
-  profiles: dev                   #开发环境
+  profiles: devabc                   #开发环境
   application:
     name: microservice-config-dev
-    
+  server: 
+    port: 7003
 ---
 spring:
-  profiles: test                  #测试环境
+  profiles: testbcd                  #测试环境
   application:
     name: microservice-config-test
 
