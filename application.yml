@@ -1,17 +1,26 @@
 ﻿spring:
   profiles:
     active:
-      - devabc
+      - dev
 ---
 spring:
-  profiles: devabc                   #开发环境
+  profiles: dev                      #开发环境
   application:
     name: microservice-config-dev
-  server: 
-    port: 7003
 ---
 spring:
-  profiles: testbcd                  #测试环境
+  profiles: test                     #测试环境
   application:
     name: microservice-config-test
-
+----
+spring:
+  profiles: microserviceconsumer
+  application:
+    name: microservice-consumer
+  server: 
+    port: 7003
+  eureka:
+    client:
+      register-with-eureka: false
+      service-url: 
+        defaultZone: http://eureka9003.com:9003/eureka/,http://eureka9002.com:9002/eureka/,http://eureka9001.com:9001/eureka/
