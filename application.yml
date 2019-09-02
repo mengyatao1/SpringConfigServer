@@ -12,9 +12,9 @@ spring:
   profiles: test                     #测试环境
   application:
     name: microservice-config-test
-----
+---
 spring:
-  profiles: microserviceconsumer
+  profiles: consumer
   application:
     name: microservice-consumer
   server: 
