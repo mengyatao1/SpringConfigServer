@@ -15,7 +15,7 @@ spring:
     name: microservice-config-test
 ----
 spring:
-  profiles: microservice-consumer
+  profiles: microserviceconsumer
   application:
     name: microservice-consumer
 
